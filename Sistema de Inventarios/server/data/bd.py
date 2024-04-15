@@ -3,11 +3,11 @@ import mysql.connector as mysql
 def connectBD(query, mode):
     try:
         conxBD = mysql.connect(
-            user = "root",
-            password = "Berylm762",
+            user = "your_user",
+            password = "your_password",
             host = "localhost",
-            database = "inventario",
-            port = "3306"
+            database = "your_name_database",
+            port = "your_port"
         )
         cursor = conxBD.cursor()
         cursor.execute(query)
