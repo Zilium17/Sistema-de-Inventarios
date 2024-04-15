@@ -33,7 +33,7 @@ async def handle_client(reader, writer):
     await writer.wait_closed()
 
 async def main():
-    server = await asyncio.start_server(handle_client, '192.168.0.8', 8100)
+    server = await asyncio.start_server(handle_client, 'your_ip(localhost)', 8100)
     addr = server.sockets[0].getsockname()
     print(f'Serving on {addr}')
     async with server:
