@@ -1,4 +1,4 @@
-instalar 
+instalar:
 pip install tkinter
 pip install customtkinter
 pip install async-tkinter-loop
