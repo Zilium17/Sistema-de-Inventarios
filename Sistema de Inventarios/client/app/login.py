@@ -37,7 +37,7 @@ class Login(ctk.CTkFrame):
                 "password": self.passVar.get(),
             }
         }
-        res = await request('192.168.0.8', 8100, jsonR)
+        res = await request('your_ip(localhost)', 8100, jsonR)
         data = json.loads(res)
         status = data['Head']['status']
         print(status)
